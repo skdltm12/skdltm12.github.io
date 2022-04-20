@@ -19,8 +19,9 @@
     <title>현대 기업</title>
     <!-- 기본 플러그인 연결 -->
     <script src="https://code.jquery.com/jquery-lastest.js"></script>
-    <!-- 웹 폰트 연결 -->
-
+    <!-- 웹 폰트 모듈 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
 
     <style>
 @font-face {
@@ -28,6 +29,9 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff') format('woff');
     font-weight: normal;
     font-style: normal;}    
+
+
+
     </style>
     <!-- 웹 아이콘 연결 -->
     <!-- XEIcon -->
@@ -36,9 +40,10 @@
     <!--스타일 초기화 모듈 연결 -->
     <link rel="stylesheet" href="./css/reset.css">
     <style>
-    * {margin: 0; padding: 0; font-family: 'SuncheonB';}
+    * {margin: 0; padding: 0;}
     ul { list-style: none;}
     a {text-decoration: none; color: #000;}
+    #ft {list-style: none;}
 
     i[class] {font-size:30px;}
     a[title='youtube'] {color:red}
@@ -49,19 +54,20 @@
     p[class='vs_com2'] {font-size:17px}
 
     .wrap {clear:both; width: 100%;}
-    #hd {clear:both; width: 100%;}
+    #hd {clear:both; width: 100%; background-color:#fff;}
     .hd_wrap {clear:both; width: 1280px; margin:0 auto}
-    .logo {display:block; width:280px; float:left;}
+    .logo {display:block; width:280px; float:left; margin: 13px;}
     .logo img{display:block; width: 100%;}
     #gnb{float:left;}
     #gnb>ul>li {float:left;padding-left: 50px; padding-right: 80px; position: relative;}
-    #gnb>ul>li>span {display:block;line-height:36px; cursor:pointer;}
-    #gnb ul li .sub {display: none; position: absolute; left:10px;  top: 36px;
+    #gnb>ul>li>span {display:block;line-height:50px; cursor:pointer; font-family: 'Noto Sans KR'; font-size: 16px; font-weight: 600;}
+    #gnb ul li .sub {display: none; position: absolute; left:10px;  top: 53px;
     padding-left: 40px; width: 160px; height: 200px; background-color: #eee; z-index: 999;}
     #gnb ul li .sub li { line-height: 38px;} 
     #gnb ul li:hover .sub {display: block;} 
     
-    #tnb{float: right;}
+    #tnb{float: right; padding-top: 14px; padding-bottom: 14px;}
+    #tnb a {font-size: 0.85em; padding-left: 15px;}
 
     #content{clear:both;width: 100%;}
     #ft {clear:both;width:100%}
@@ -217,7 +223,15 @@
                  <a href="" title="instagram"><i class="xi-instagram"></i></a>
                 </li>
          </nav>
+         <nav class="fnb">
+             <a href="">개인정보 취급 방침</a>
+             <a href="">이용 약관</a>
+             <a href="">이메일 무단수집 거부</a>
+
+             <li>주식회사 현대기업 대표자 : 이호철</li>
+            <li>경남 함안군 칠서면 공단동4길 94 Tel: 055-297-5701 Fax : 055-293-5936 E-mail : hdke@hdke.co.kr</li>         </nav>
      </div>
+     <p>Copyright(c) 2021 Hyundae Co.,Ltd. Al rights reserved. Disigned by</p>
     </footer>
     
 </body>
