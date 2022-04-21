@@ -49,32 +49,48 @@
     a[title='youtube'] {color:red}
     a[title='facebook'] {color:rgb(73, 73, 229)}
     a[title='instagram'] {color:rgb(235, 154, 245)}
-    p[class='vs_com1'] {font-size :28px}
-    div[class='tit_box'] {font-size :22px}
-    p[class='vs_com2'] {font-size:17px}
 
     .wrap {clear:both; width: 100%;}
-    #hd {clear:both; width: 100%; background-color:#fff;}
+    #hd {clear:both; width: 100%; background-color:#fff; height: 80px;}
     .hd_wrap {clear:both; width: 1280px; margin:0 auto}
-    .logo {display:block; width:280px; float:left; margin: 13px;}
-    .logo img{display:block; width: 100%;}
-    #gnb{float:left;}
+    .logo {display:block; width:280px; float:left; margin: 13px; padding-right: 35px;}
+    .logo img{display:block; width: 100%; margin-top: 10px;}
+    #gnb{float:left; margin-top: 18px;}
     #gnb>ul>li {float:left;padding-left: 50px; padding-right: 80px; position: relative;}
-    #gnb>ul>li>span {display:block;line-height:50px; cursor:pointer; font-family: 'Noto Sans KR'; font-size: 16px; font-weight: 600;}
-    #gnb ul li .sub {display: none; position: absolute; left:10px;  top: 53px;
+    #gnb>ul>li>span {display:block;line-height:36px; cursor:pointer;
+        font-family: 'Noto Sans KR'; font-size: 16px; font-weight: 600;
+        }
+    #gnb ul li .sub {display: none; position: absolute; left:10px;  top: 35px;
     padding-left: 40px; width: 160px; height: 200px; background-color: #eee; z-index: 999;}
-    #gnb ul li .sub li { line-height: 38px;} 
-    #gnb ul li:hover .sub {display: block;} 
     
-    #tnb{float: right; padding-top: 14px; padding-bottom: 14px;}
-    #tnb a {font-size: 0.85em; padding-left: 15px;}
+    #gnb ul li .sub a:hover {color:blueviolet;}
+    #gnb ul li .sub li { line-height: 36px;} 
+    #gnb ul li:hover .sub {display: block;} 
+
+    .ImgBox {width: 400%;} 
+    .ImgBox li {display:block; float:left; width: 25%; position: relative;}
+    .ImgBox li a{display:block}
+    .ImgBox a img {display: block; width: 100%; height: auto;}
+    .ImgBox .tit_box {position:absolute; top:420px; left:100px; color: #fff;
+    text-shadow: 1px 1px 1px #000;}
+    .tit_box {font-size: 20px;}
+    .vs_com1 {font-size: 45px; padding-top: 10px;}
+    .vs_com2 {font-size: 25px; }
+    #vs {width: 100%; overflow: hidden;}
+  
+    
+    #tnb{float: right; padding-top: 14px; padding-bottom: 14px; margin-top: 14px;}
+    #tnb a {font-size: 0.85em; padding-left: 5px;}
+    #tnb a:hover {color: rgb(165, 209, 209);}
 
     #content{clear:both;width: 100%;}
+
     #ft {clear:both;width:100%}
+
     </style>
 
 </head>
-<body>
+<body></body>
     <div class="wrap">
         <header id="hd">
             <div class = "hd_wrap">
@@ -119,7 +135,7 @@
                 </nav>
                 <p id="tnb">
                     <a href="">로그인</a>
-                    <a href="">ENG</a>
+                    <a href="">사이트맵</a>
                     <a href="">오시는 길</a></p>
             </div>            
         </header>
@@ -129,9 +145,9 @@
                     <li>
                         <a href="" class="mainslide">
                             <img src="./web1/img/main03.jpg" alt="메인슬라이드1">
-                            <div class="tit_box">최고 건축의 장 문화를 선도하는 기업 주식회사 현대기업
+                            <div class="tit_box">    최고 건축의 장 문화를 선도하는 기업 주식회사 현대기업
                                 <p class="vs_com1">HYUNDAE SURFACE DESIGN</p>
-                                <p class="vs_com2">We are doing best to increase service quality</p>
+                                <p class="vs_com2">  We are doing best to increase service quality</p>
                             </div>
                         </a>
                     </li>
@@ -153,15 +169,14 @@
                             </div>
                         </a>
                     </li>
-                </ulImgBox>
-                <div class="btn_group"><button class="prev_btn" img src="./web1/img/arrow_left.png">
-
-                </button>
-                    <button class="next_btn" img src="./web1/img/arrow_right.png">
-
-                </button>
-                </div>
+                </ul>
+                <div class="btn_group">
+                    <button class="prev_btn"><img src="./web1/img/arrow_left.png"></button>
+                    <button class="next_btn"><img src="./web1/img/arrow_right.png"></button>
+                </button>          
             </figure>
+    </div>
+
             <div class="grid_box">
                 <ul>
                     <li class="col2">
