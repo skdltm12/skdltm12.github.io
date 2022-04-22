@@ -18,7 +18,7 @@
     <meta property="og:image" content="./img/web1/logo.jpg">
     <title>현대 기업</title>
     <!-- 기본 플러그인 연결 -->
-    <script src="https://code.jquery.com/jquery-lastest.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <!-- 웹 폰트 모듈 연결 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     
@@ -31,14 +31,16 @@
     font-style: normal;}    
 
 
-
+    
     </style>
+
     <!-- 웹 아이콘 연결 -->
     <!-- XEIcon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
-
     <!--스타일 초기화 모듈 연결 -->
-    <link rel="stylesheet" href="./css/reset.css">
+       <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+       <link rel="stylesheet" href="./css/normalize.css">
+    
     <style>
     * {margin: 0; padding: 0;}
     ul { list-style: none;}
@@ -67,16 +69,18 @@
     #gnb ul li .sub li { line-height: 36px;} 
     #gnb ul li:hover .sub {display: block;} 
 
-    .ImgBox {width: 400%;} 
-    .ImgBox li {display:block; float:left; width: 25%; position: relative;}
-    .ImgBox li a{display:block}
-    .ImgBox a img {display: block; width: 100%; height: auto;}
-    .ImgBox .tit_box {position:absolute; top:420px; left:100px; color: #fff;
+    #content { clear:both; width: 100%; }
+    #vs {width: 100%; overflow: hidden;}
+    .img_box {width: 400%;} 
+    .img_box li {display:block; float:left; width: 25%; position: relative;}
+    .img_box li a{display:block}
+    .img_box a img {display: block; width: 100%; height: auto;}
+    .img_box .tit_box {position:absolute; bottom:50px; left:100px; color: #fff;
     text-shadow: 1px 1px 1px #000;}
     .tit_box {font-size: 20px;}
     .vs_com1 {font-size: 45px; padding-top: 10px;}
     .vs_com2 {font-size: 25px; }
-    #vs {width: 100%; overflow: hidden;}
+  
   
     
     #tnb{float: right; padding-top: 14px; padding-bottom: 14px; margin-top: 14px;}
@@ -84,6 +88,14 @@
     #tnb a:hover {color: rgb(165, 209, 209);}
 
     #content{clear:both;width: 100%;}
+    .grid_box {clear: both; width: 100%}
+    .grid_wrap {clear: both; width: 100%}
+    .grid_wrap li {float:left}
+    /* .col1 {width: 12.5%;}
+    .col2 {width: 25%;}
+    .col3 {width: 37.5%;}
+    .col4 {width: 50%;} */
+
 
     #ft {clear:both;width:100%}
 
@@ -141,7 +153,7 @@
         </header>
         <div id="content">
             <figure id="vs">
-                <ul class="ImgBox">
+                <ul class="img_box">
                     <li>
                         <a href="" class="mainslide">
                             <img src="./web1/img/main03.jpg" alt="메인슬라이드1">
@@ -173,57 +185,74 @@
                 <div class="btn_group">
                     <button class="prev_btn"><img src="./web1/img/arrow_left.png"></button>
                     <button class="next_btn"><img src="./web1/img/arrow_right.png"></button>
-                </button>          
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        wd = $(window).width();
+                        var intv = setInterval(function(){
+                            ani1();
+                        }, 3000);
+                        function ani1(){
+                            $(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 600, function(){
+                                $(".img_box li").eq(0).appendTo($(".img_box"));
+                                $(".img_box").css("margin-left","0px");
+                            });
+                        }
+                    });    
+                    </script>
+              
             </figure>
-    </div>
-
             <div class="grid_box">
-                <ul>
-                    <li class="col2">
+                <ul id="grid_wrap">
+                    <li id="col1_item1">
                         <a href="">
-                            <h3 class="col_tot">OUR PRODUCTS
-                                <h2>고객이 인정하는 최고의 기술과 인프라</h2>
-                                <a href=""><img src="./web1/img/business01.jpg">표면처리</a>
-                                <a href=""><img src="./web1/img/business02.jpg">Door</a>
-                                <a href=""><img src="./web1/img/business03.jpg">Wall</a>
-                                <a href=""><img src="./web1/img/business04.jpg">천정판</a>
-                            </h3>
-                            <p class="col_com span arrow"></p>
+                            <img src="./web1/img/business01.jpg" alt="표면처리">
+                            <h3 id="col_tit">표면처리</h3>
+                            <p id="col_com"></p>
+                            <span id="arrow"></span>
                         </a>
                     </li>
-                    <li class="col2">
-                        <a href=""><img src="./web1/img/company_bg.jpg" alt="메인2">
-                            <h3 class="col_w_tit">WE ARE DOING BEST TO
-                                INCREASE SERVICE QUALITY
-                                <p class="col_w_com1">회사개요                                    
-                                </p>
-                                <p class="cow_w_com1">경영방침
-                                </p>
-                            </h3>
+                    <li id="col2_item2">
+                        <a href="">
+                            <img src="./web1/img/business02.jpg" alt="Door">
+                            <h3 id="col_tit">Door</h3>
+                            <p id="col_com"></p>
+                            <span id="arrow"></span>
                         </a>
                     </li>
-                    <li class="col2">
-                        <a href=""><img src="./web1/img/news_bg.jpg" alt="메인2">
-                                <h3 class="col_w_tit">EQUIPMENT
-                                    <h2>준비되어있는 주식회사 현대기업은 고객의 생산성과
-                                        부가가치를 위해 끊임없이 움직이고 있습니다.</h2>
-                                    <p class="col_w_com1">판금설비</p>
-                                    <p class="col_w_com1">표면처리설비</p>
-                                    <p class="col_w_com1">공정도</p>
-                                </h3>
+                    <li id="col3_item3">
+                        <a href="">
+                            <img src="./web1/img/business03.jpg" alt="Wall">
+                            <h3 id="col_tit">Wall</h3>
+                            <p id="col_com"></p>
+                            <span id="arrow"></span>
                         </a>
                     </li>
-                    <li class="col2">
-                        <a href=""><img src="./web1/img/news_bg.jpg" alt="메인2">
-                                <h3 class="col_w_tit">INQUIRY
-                                    <h2>고객과 함께 발전하고 성장하는 파트너 주식회사 현대기업에 궁금하신 사항을 남겨주세요
-                                    </h2>
-                                    <p class="col_w_com1">메일보내기</p>
-                                </h3>
+                    <li id="col4_item4">
+                        <a href="">
+                            <img src="./web1/img/business04.jpg" alt="천정판">
+                            <h3 id="col_tit">천정판</h3>
+                            <p id="col_com"></p>
+                            <span id="arrow"></span>
+                        </a>
+                    </li>
+                    <li id="col5_item5">
+                        <a href="">
+                            <h3 id="col_tit"></h3>
+                            <p id="col_com"></p>
+                            <span id="arrow"></span>
+                        </a>
+                    </li>
+                    <li id="col6_item6">
+                        <a href="">
+                            <h3 id="col_tit"></h3>
+                            <p id="col_com"></p>
+                            <span id="arrow"></span>
                         </a>
                     </li>
                 </ul>
             </div>
+        </div>
         
     <footer id="ft">
      <div class="ft_wrap">
