@@ -126,64 +126,85 @@
                 </div>
                 <script>
                     $(document).ready(function(){
-                        wd = $(window).width();
-                        var intv = setInterval(function(){
-                            ani1();
-                        }, 3000);
-                        function ani1(){
-                            $(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 600, function(){
-                                $(".img_box li").eq(0).appendTo($(".img_box"));
-                                $(".img_box").css("margin-left","0px");
-                            });
-                        }
-                    });    
+                    wd = $(window).width();
+                    var intv = setInterval(function(){
+                        ani1();
+                    }, 5000);
+                    function ani1(){
+                        $(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 600, function(){
+                            $(".img_box li").eq(0).appendTo($(".img_box"));
+                            $(".img_box").css("margin-left","0px");
+                        });
+                    }
+                    function ani2(){
+                        $(".img_box").css("margin-left",-wd+"px");
+                        $(".img_box li:last-child").prependTo($(".img_box"));
+                        $(".img_box").not(":animated").animate({"margin-left":"0px"}, 600);
+                    }
+                    $(".btn_group .next_btn").click(function(){
+                        clearInterval(intv);
+                        ani1();
+                        intv = setInterval(function(){ ani1(); }, 5000);                    });
+                    $(".btn_group .prev_btn").click(function(){
+                        clearInterval(intv);
+                        ani2();
+                        intv = setInterval(function(){ ani1(); }, 5000);
+                    });
+                });    
                     </script>
               
             </figure>
             <div class="grid_box">
                 <ul class="grid_wrap">
-                    <li class="col item1">
+                    <li class="col2 item1">
+                        <a href="">
+                            <h3 class="col_tit a" >EQUIPMENT</h3>
+                            <p class="col_com">준비되어있는 주식회사 현대기업은<br>
+                            고객의 생산성과 부가가치를 위해<br>끊임없이 움직이고 있습니다.
+                            </p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2 item2">
+                        <a href="">
+                            <h3 class="col_tit a">INQUIRY</h3>
+                            <p class="col_com">고객과 함께 발전하고<br> 성장하는 파트너 주식회사 <br>
+                                현대기업에 궁금하신<br> 사항을 남겨주세요</p>
+                            <span class="arrow"></span>
+                        </a>
+
+                    </li>
+                    <li class="col2 item3">
+
                         <a href="sub02/01_01.html">                            
                             <h3 class="col_tit">표면처리</h3>
                             <p class="col_com"></p>
                             <span class="arrow"></span>
                         </a>
                     </li>
-                    <li class="col item2">
-                        <a href="sub02/02_01.html">
+                    <li class="col2 item4">
+                    	 <a href="sub02/02_01.html">
                             <h3 class="col_tit">Door</h3>
                             <p class="col_com"></p>
                             <span class="arrow"></span>
                         </a>
                     </li>
-                    <li class="col item3">
+                    <li class="col2 item5">
                         <a href="sub02/03_01.html">
-                            <h3 id="col_tit">Wall</h3>
-                            <p id="col_com"></p>
-                            <span id="arrow"></span>
+                            <h3 class="col_tit">Wall</h3>
+                            <p class="col_com"></p>
+                            <span class="arrow"></span>
                         </a>
                     </li>
-                    <li class="col item4">
+                    <li class="col2 item6">
+
                         <a href="sub02/04_01.html">
                             <h3 class="col_tit">천정판</h3>
                             <p class="col_com"></p>
                             <span class="arrow"></span>
                         </a>
+
                     </li>
-                    <!-- <li class="col5_item5">
-                        <a href="">
-                            <h3 class="col_tit"></h3>
-                            <p class="col_com"></p>
-                            <span class="arrow"></span>
-                        </a>
-                    </li>
-                    <li class="col6_item6">
-                        <a href="">
-                            <h3 class="col_tit"></h3>
-                            <p class="col_com"></p>
-                            <span class="arrow"></span>
-                        </a>
-                    </li> -->
                 </ul>
             </div>
         </div>
