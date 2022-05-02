@@ -1,11 +1,11 @@
 @charset "UTF-8";
-#hd {  position:fixed; top: 0; left: 0; height:80px; z-index:999;
-background-color: rgb(255,255,255);   }   
-.page { clear:both; min-height:100vh; display:none; width: 100%; }
+#hd {position:fixed; top: 0; left: 0; height:80px; z-index:999;
+background-color: rgb(255,255,255);  }   
+.page { clear:both; min-height:100vh; display:none; width: 100%;   overflow: hidden;}
 .sub_ban { clear:both; width: 100%; position:relative;; }
 .sub_ban img { display:block; width: 100%; height:330px; }
 .tit_box {width:1280px; position:absolute; top:0px; left: 0px; z-index:30; color:#fff; text-shadow:1px 1px 1px #333; top:15%;left: 50%; transform: translate(-17%);}
-.sub_tit {clear: both;;font-size:20px; padding-top: 120px;}
+.sub_tit {clear: both;font-size:20px; padding-top: 120px;}
 .sub_com { font-size:30px; padding-top: 20px; font-family: 'Noto Sans KR', sans-serif;  top:15%;left: 50%; transform: translate(12.5%);}
 .bread_box { clear: both; width: 100%; height: 48px; border-bottom:3px solid #f1f1f1; }
 .bread_wrap { width: 1280px; margin: 0 auto; }
@@ -14,7 +14,7 @@ background-color: rgb(255,255,255);   }
 .bread li:after { content:">"; padding-left: 24px; }
 .bread li:last-child::after { content: ""; }
 .page:target { display:block; }
-.page_con { clear:both; width: 100%; overflow-x: hidden; }
+.page_con { clear:both; width: 100%;}
 .page_wrap { width: 1280px; margin: auto; min-height:50vh;}
 .ptop1 {text-align: center; padding: 20px;}
 .ptop1 h2 {padding-bottom: 10px; font-size:35px; font-family: 'Noto Sans KR', sans-serif; color: rgb(56, 55, 55);}
@@ -23,31 +23,54 @@ background-color: rgb(255,255,255);   }
 .pbot1 h3 { color: rgb(44, 69, 136); font-size: 25px ; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; font-weight: 400;}
 .pbot1 p {float: right; width: 1100px; padding-right: 130px; font-size: 15px; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;}
 .pbot1 p>a {font-size: 16px; font-weight: 600; margin: 10px; padding-bottom: 10px;}
-.tab1 {clear: both; text-align: center; padding-bottom: 100px;border : 2px sloid rgb(219, 210, 210); }
+.tab1 {clear: both; text-align: center; padding-bottom: 100px; padding-top: 20px;}
 .tab1 h3 {font-size: 30px; padding: 10px; margin-bottom: 20px; font-family: 'Noto Sans KR', sans-serif; color: rgb(56, 55, 55);}
 .tab1>table {width: 80%; margin: 0 auto;} 
 .ptable1{border-collapse: collapse; border-top: 3px solid rgb(16, 140, 210);}
-.tab1 tr,td {border : 1px solid rgb(157, 150, 150); padding: 12px;}
+.tab1 tr, .tab1 td {border : 1px solid rgb(157, 150, 150); padding: 12px;}
 .tab1 td:first-child,td:nth-child(3) {background-color: rgb(244, 243, 239); } 
 /* 페이지2 */
 .pbot2 {text-align: center;}
-.pbot2 a {color: rgb(27, 179, 179);}
+.pbot2 h2 {font-family: 'Alegreya Sans', sans-serif; font-size: 60px; font-weight: 100;}
+.pbot2 a {color: rgb(27, 179, 179);font-family: 'Roboto', sans-serif; font-weight:lighter;}
+.pbot2 p {font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; font-weight: 300; font-size: 18px; }
 .history { clear: both; width: 100%; text-align: center;}
+.year_lst { width: 1280px; ;position:relative;} 
+.ul1 {margin-left: 43px;}
+.lst_month strong{font-weight: 700;}
+.lst_month {font-family: 'Noto Sans KR', sans-serif; font-weight:300; font-size: 20px; color: rgb(74, 98, 236);}
+.lst_month_com {font-family: 'GowunDodum-Regular'; font-weight: 400; padding-bottom: 7px;}
+.year_lst li { width:598px; clear:both; box-sizing: border-box; position:relative; }
+.year_lst li:nth-child(2n+1) { float:left; border-right:2px dashed #666;  text-align:right; padding-right:100px; }    
+.year_lst li:nth-child(2n) { float:right; border-left:2px dashed #666;  margin-right:86px;  padding-left: 100px;}   
+.year_lst li:nth-child(2n+1) .lst_month:after { content:""; width: 0; height: 0; display:block; border-right:15px solid rgb(0, 119, 184);
+border-bottom:10px solid #fff; border-left:15px solid #fff; border-top:10px solid #fff; position:absolute; right:-2px; top:6px;}  
+.year_lst li:nth-child(2n) .lst_month:before { content:""; width: 0; height: 0; display:block; border-right:15px solid #fff;
+border-bottom:10px solid #fff; border-left:15px solid rgb(0, 119, 184);; border-top:10px solid #fff; position:absolute; left:-2px; top:6px; }  
+.year_lst li:nth-child(2n+1) .lst_month_com:after { content:""; width:80px; height:2px; background-color: rgb(0, 119, 184);  display:block;
+position:absolute; right:0px; top:15px; }
+.year_lst li:nth-child(2n) .lst_month_com:before { content:""; width:80px; height:2px; background-color: rgb(0, 119, 184);  display:block;
+position:absolute; left:0px; top:15px; }
+.year_lst li:nth-child(2n+1) .lst_box:after { content:""; width:8px; height:8px; display:block; background-color: rgb(0, 119, 184);; 
+position:absolute; right:80px; top:12px; border-radius:4px; }
+.year_lst li:nth-child(2n) .lst_box:after { content:""; width:8px; height:8px; display:block; background-color: rgb(0, 119, 184);; 
+position:absolute; left:80px; top:12px; border-radius:4px;}
+.year_lst li:last-child {border: none;}
 
-.r_img1 {position: absolute; padding-left: 2px; padding-top: 13px;}
-.l_img1 {position: relative; bottom:110px; left:2px}
-.r_img2 {position: absolute; padding-left: 2px; padding-top: 90px;}
+
  
 
 /* 페이지3 */
 .tab2>table {margin: 0 auto; width: 80%; text-align: center;}
-.ptable2 {border-collapse: collapse; border-top: 3px solid rgb(16, 140, 210);}
+.ptable2 {border-collapse: collapse; border-top: 3px solid rgb(16, 140, 210); }
+.ptable2 td {border : 1px solid rgb(157, 150, 150); padding: 12px;}
 .ptable2 tr:first-child {background-color: rgb(244, 243, 239);}
 .pbot3 {text-align: center;}
 .pbot3 h2 {font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; font-weight: 500; color: rgb(44, 69, 136); padding-bottom: 10px;}
 .pbot3>img {padding: 20px;}
-.pbot3 p {font-family: 'Noto Sans KR', sans-serif; color: rgb(56, 55, 55); font-size: 30px; padding-bottom: 45px;}
-.pbot3>.license {padding:50px;}
+.pbot3 p {font-family: 'Noto Sans KR', sans-serif; color: rgb(56, 55, 55); font-size: 30px; padding-bottom: 45px; font-weight: 700;}
+.pbot3>.license {padding:20px;}
+.license>img {padding: 20px;}
 .licimg1, .licimg2, .licimg3, .licimg4 {float:left;border:1px solid rgb(157, 150, 150); width: 155px; height: 220px;}
 .lic1, .lic2, .lic3, .lic4 {float: left;text-align: left;}
 .lic1>h3, .lic2>h3, .lic3>h3, .lic4>h3 {width: 400px; margin-left: 180px;}
@@ -55,10 +78,20 @@ background-color: rgb(255,255,255);   }
 .lic1, .lic2 {padding-bottom: 30px; width: 250;}
 .lic3, .lic4 {padding-bottom: 50px;}
 
-.license p {font-size: 15px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.license p {font-size: 15px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 400;}
 .license p>strong {color: rgb(191, 10, 10);}
 .license>p {font-family: 'Noto Sans KR', sans-serif; color: rgb(56, 55, 55); font-size: 30px; padding-bottom: 45px; text-align: center;}
 
+/* 페이지4 */
 
-
+.pbot4 {width: 100%; text-align: center;}
+.pbot4>img {padding-bottom: 20px;}
+.pbot4 h3 {font-family: 'Noto Sans KR', sans-serif; color: rgb(56, 55, 55); font-size: 30px; padding-bottom: 45px;}
+.map1 {margin: 0 auto ; float: left;}
+.line1 {padding: 20px; padding-bottom: 76px;}
+.tab4 {float:right; padding: 10px}
+.tab4 td {padding: 9px; font-size: 16px;}
+.tab4 td:first-child {color:rgb(45, 23, 165);font-weight:600; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;}
+.tab4 td:last-child {padding-left: 50px; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;}
+iframe {padding-top: 30px;padding-bottom: 30px; }
 
