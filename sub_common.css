@@ -34,6 +34,11 @@ background-color: rgb(255,255,255);   }
 .pbot2 a {color: rgb(27, 179, 179);}
 .history { clear: both; width: 100%; text-align: center;}
 
+.r_img1 {position: absolute; padding-left: 2px; padding-top: 13px;}
+.l_img1 {position: relative; bottom:110px; left:2px}
+.r_img2 {position: absolute; padding-left: 2px; padding-top: 90px;}
+ 
+
 /* 페이지3 */
 .tab2>table {margin: 0 auto; width: 80%; text-align: center;}
 .ptable2 {border-collapse: collapse; border-top: 3px solid rgb(16, 140, 210);}

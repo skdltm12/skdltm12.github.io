@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    ul { list-style: none; }
+    .year_lst { width: 1200px; margin: 0 auto; position:relative;} 
+    .year_lst li { width:558px; clear:both; box-sizing: border-box; position:relative; }
+    .year_lst li:nth-child(2n+1) { float:left; border-right:2px dashed #666;  text-align:right; padding-right:100px; }    
+    .year_lst li:nth-child(2n) { float:right; border-left:2px dashed #666;  margin-right:86px;  padding-left: 100px; }   
+    .year_lst li:nth-child(2n+1) .lst_month:after { content:""; width: 0; height: 0; display:block; border-right:40px solid #333;
+border-bottom:24px solid #fff; border-left:40px solid #fff; border-top:24px solid #fff; position:absolute; right:-2px; top:40px; }  
+    .year_lst li:nth-child(2n) .lst_month:before { content:""; width: 0; height: 0; display:block; border-right:40px solid #fff;
+border-bottom:24px solid #fff; border-left:40px solid #333; border-top:24px solid #fff; position:absolute; left:-2px; top:40px; }  
+    .year_lst li:nth-child(2n+1) .lst_month_com:after { content:""; width:80px; height:2px; background-color: #333;  display:block;
+    position:absolute; right:0px; top:63px; }
+    .year_lst li:nth-child(2n) .lst_month_com:before { content:""; width:80px; height:2px; background-color: #333;  display:block;
+    position:absolute; left:0px; top:63px; }
+    .year_lst li:nth-child(2n+1) .lst_box:after { content:""; width:8px; height:8px; display:block; background-color: #333; 
+position:absolute; right:80px; top:60px; border-radius:4px; }
+    .year_lst li:nth-child(2n) .lst_box:after { content:""; width:8px; height:8px; display:block; background-color: #333; 
+position:absolute; left:80px; top:60px; border-radius:4px; }
+    .lst_month { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <ul class="year_lst">
+        <li>
+            <div class="lst_box">
+                <p class="lst_month">1979 09</p> 
+                <p class="lst_month_com">현대기업 설립(마산 석전동)</p>
+            </div>  
+        </li>
+        <li>
+            <div class="lst_box">
+                <p class="lst_month">1987 11</p>
+                <p class="lst_month_com">주)현대기업으로 법인전환 및 본사이전 (창원시 팔용동)</p>
+            </div>
+        </li>
+        <li>
+            <div class="lst_box">
+                <p class="lst_month">1989 06</p>
+                <p class="lst_month_com">LG산전 협력업체(현 OTIS) 등록</p>
+            </div>
+        </li>
+        <li>
+            <div class="lst_box">
+                <p class="lst_month">1993 01</p>
+                <p class="lst_month_com">LG산전(주) 92년도 우수협력회사상 수상</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
