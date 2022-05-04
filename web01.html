@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +7,63 @@
     <title>헤더와 푸터</title>
     <style>
         *{ margin: 0; padding: 0;}
-        body, html {width: 1280px;}
+        body, html {width: 100%;}
         ul {list-style: none;}
         a {text-decoration: none; color:black}
         
-        #hd {clear: both; width: 1280px;}
-        .hd-wrap {clear: both;;width: 1280px; margin: 0 auto;}
-        a.logo {float:left; display: block; width: 320px; height: auto;}
-        .gnb{float: left;}
+        #hd {clear: both; width: 100%; height: 80px;}
+        .hd-wrap {clear: both;width: 100%; margin: 0 auto;}
+        .logo {display:block; width:280px; float:left; margin: 13px; padding-right: 35px; padding-top: 8px;}
+        .gnb{float: left; margin: 18px;}
         .gnb li {float: left; position: relative}
-        .gnb li .dp1 {display: block; line-height: 36px; height: 36px; padding-right: 56px;}
-        .gnb li .sub {display: none; position: absolute; top: 36px; left:0; z-index: 999;}
+        .gnb li .dp1 {display: block; line-height: 36px; height: 36px; padding-right: 56px; padding-left: 56px;}
+        .gnb li .sub {display: none; position: absolute; top: 36px; left: 56px;; z-index: 999;}
         .gnb li:hover .sub {display: block;}
         .gnb li .sub li {clear: both;}
 
-        .tnb{float:right}
+        .tnb{float:right; margin: 28px;}
 
-        #content {clear: both; width: 1280px;} 
+        #content {clear: both; width: 100%;} 
         .page { clear: both; width: 100%; display: none;}
+        .page_tit {text-align: center; padding: 20px;}
+        
+        .page:target { display:block; }
         .sub_ban {clear: both; width: 100%;}
         .sub_ban img {display: block; width: 100%;}
+        
         .bread_box {clear: both; width:100;border-top: 2px solid rgb(198, 221, 221); border-bottom: 2px solid rgb(198,221,221);}
-        .bread_wrap {clear: both; width: 1280px; margin: 0 auto; height: 40px; padding-top: 1em;}
+        .bread_wrap {clear: both; width: 100%; margin: 0 auto; height: 40px; padding-top: 1em;}
         .bread_wrap a {padding-right: 20px;}
 
-        #ft {clear: both; width: 1280px; height: 80px;}
+        .tb2 {display: table; border-collapse: collapse; margin: 0 auto;}
+        .tb2 tr {display: table-row; line-height: 16px;}
+        .tb2 .d1 , .tb2 .d3 {background-color:rgb(217, 230, 255); padding: 10px; border-top: 1px solid  #333; border-right: 1px solid #333; border-bottom: 1px solid #333; }
+        .tb2 .d2, .tb2 .d4 {padding: 10px; padding-left: 20px; border-top: 1px solid  #333  ; border-bottom: 1px solid #333;}
+        .tb2 td {display: table-cell; width: 200px;}
+        .tb2 th:nth-child(3) {border-left: 1px solid #333;}
+
+        .tb1 {border: 1px solid #333; border-collapse: collapse;}
+        .tb1 td {border: 1px solid #333; padding: 20px;}
+        .tb1 tr:first-child {background: rgba(241, 168, 168, 0.287);}
+
+        .tb3 {display: table; width:700px; margin: 0 auto; margin-bottom: 80px; text-align: center;}
+        .tb3 .tr {display: table-row;}
+        .tb3 .td {display: table-cell;}
+        .tb3 .th, .tb3 .td {border-top: 1px solid #333; border-right: 1px solid #333; line-height: 30px;}
+        .tb3 .th:last-child, .tb3 .td:last-child {border-right: none;}
+        .tb3 .th {background-color: #f7eded; font-weight: bold;}
+        .tb3 .e5 {border-bottom: 1px solid #333;}
+
+        .snl {clear:both; float: left; width: 1200px; margin: 0 auto;}
+        .snl li {width: 300px; height: 300px; float: left;}
+        
+
+        
+  
+
+
+        #ft {clear:both;width:100%; padding-top: 25px; background: rgba(241, 221, 221, 0.2);}
+        
         .fnb {clear: both;float: left}
         .snb {float:right}
         .copyright { clear:both}
@@ -49,10 +81,10 @@
                     <li>
                         <a href="" class="dp1">메인1</a>
                         <ul class="sub">
-                            <li><a href="">서브11</a></li>
-                            <li><a href="">서브12</a></li>
-                            <li><a href="">서브13</a></li>
-                            <li><a href="">서브14</a></li>
+                            <li><a href="web01.html#page1">서브11</a></li>
+                            <li><a href="web01.html#page2">서브12</a></li>
+                            <li><a href="web01.html#page3">서브13</a></li>
+                            <li><a href="web01.html#page4">서브14</a></li>
                         </ul>
                     </li>
                     <li>
@@ -103,7 +135,7 @@
     </header>
     <div id="content">
         <!-- section#page$*4>(figure.sub_ban>img)+(div.bread_box>a{Home}*3)+(div.con_wrap>div.page_wrap) -->
-        <section id="page1">
+        <section id="page1" class="page">
             <figure class="sub_ban"><img src="./web1/img/sub_top.jpg" alt="서브배너"></figure>
             <div class="bread_box">
                 <div class="bread_wrap">
@@ -118,11 +150,97 @@
             </div>
             <div class="con_wrap">
                 <div class="page_wrap">
-                    <h2 class="page_tit">페이지1 제목</h2>
+                    <h2 class="page_tit">테이블1 제목</h2>
+                        <table class="tb2">
+                            <tbody>
+                                <tr>
+                                    <th class="d1">항목명</th>
+                                    <td class="d2">항목데이터</td>
+                                    <th class="d3">항목명</th>
+                                    <td class="d4">항목데이터</td>
+                                </tr>
+                                <tr>
+                                    <th class="d1">항목명</th>
+                                    <td class="d2">항목데이터</td>
+                                    <th class="d3">항목명</th>
+                                    <td class="d4">항목데이터</td>
+                                </tr>
+                                <tr>
+                                    <th class="d1">항목명</th>
+                                    <td class="d2">항목데이터</td>
+                                    <th class="d3">항목명</th>
+                                    <td class="d4">항목데이터</td>
+                                </tr>
+                                <tr>
+                                    <th class="d1">항목명</th>
+                                    <td class="d2">항목데이터</td>
+                                    <th class="d3">항목명</th>
+                                    <td class="d4">항목데이터</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                </div>
+                <!-- <div class="page_wrap">
+                    <h2 class="page_tit">테이블제목2</h2>
+                        <table class="tb1">
+                            <tbody>
+                                <tr>
+                                    <td>테이블 이름</td>
+                                    <td>테이블 제목</td>
+                                    <td>테이블 내용</td>
+                                </tr>
+                                <tr>
+                                    <td>테이블 이름1</td>
+                                    <td>테이블 제목2</td>
+                                    <td>테이블 내용3</td>
+                                </tr>
+                                <tr>
+                                    <td>테이블 이름1</td>
+                                    <td>테이블 제목2</td>
+                                    <td>테이블 내용3</td>
+                                </tr>
+                                <tr>
+                                    <td>테이블 이름1</td>
+                                    <td>테이블 제목2</td>
+                                    <td>테이블 내용3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div> -->
+                <div class="page_wrap">
+                    <h2>테이블제목3</h2>
+                    <div class="tb3">
+                    
+                    <ul class="tr">
+                        <li class="th">제목1</li>
+                        <li class="td">내용1</li>
+                        <li class="th">제목1</li>
+                        <li class="td">내용1</li>
+                    </ul>
+                    <ul class="tr">
+                        <li class="th">제목1</li>
+                        <li class="td">내용1</li>
+                        <li class="th">제목1</li>
+                        <li class="td">내용1</li>
+                    </ul>
+                    <ul class="tr">
+                        <li class="th">제목1</li>
+                        <li class="td">내용1</li>
+                        <li class="th">제목1</li>
+                        <li class="td">내용1</li>
+                    </ul>
+                    <ul class="tr">
+                        <li class="th e5">제목1</li>
+                        <li class="td e5">내용1</li>
+                        <li class="th e5">제목1</li>
+                        <li class="td e5">내용1</li>
+                    </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="page2">
+        <section id="page2" class="page">
             <figure class="sub_ban"><img src="./web1/img/sub_top2.jpg" alt="서브배너"></figure>
             <div class="bread_box">
                 <div class="bread_wrap">
@@ -135,13 +253,32 @@
                     </select>
                 </div>
             </div>
-            <div class="con_wrap">
+            <div class="con_wrap" class="page">
                 <div class="page_wrap">
                     <h2 class="page_tit">페이지2 제목</h2>
+                    <h3 class="sec_tit">썸네일 목록</h3>
+                    <div class="snl">
+                        <ul>
+                            <li class="item1">썸네일 이름</li>
+                            <li class="item2"><img src="./web1/img/oled_list01.jpg" alt=""></li>
+                            <li class="item3"><img src="./web1/img/oled_list02.jpg" alt=""></li>
+                            <li class="item4"><img src="./web1/img/oled_list03.jpg" alt=""></li>
+                            <li class="blank_box"></li>
+                            <li class="item6"><img src="./web1/img/oled_list04.jpg" alt=""></li>
+                            <li class="item7"><img src="./web1/img/oled_list05.jpg" alt=""></li>
+                            <li class="item8"><img src="./web1/img/oled_list06.jpg" alt=""></li>
+                            <li class="blank_box"></li>
+                            <li class="item10"><img src="./web1/img/oled_list01.jpg" alt=""></li>
+                            <li class="item11"><img src="./web1/img/oled_list02.jpg" alt=""></li>
+                            <li class="item12"><img src="./web1/img/oled_list03.jpg" alt=""></li>
+                            <li class="blank_box"></li>
+                            <li class="item14"><img src="./web1/img/oled_list01.jpg" alt=""></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="page3">
+        <section id="page3" class="page">
             <figure class="sub_ban"><img src="./web1/img/sub_top3.jpg" alt="서브배너"></figure>
             <div class="bread_box">
                 <div class="bread_wrap">
@@ -160,7 +297,7 @@
                 </div>
             </div>
         </section>
-        <section id="page4">
+        <section id="page4" class="page">
             <figure class="sub_ban"><img src="./web1/img/sub_top4.jpg" alt="서브배너"></figure>
             <div class="bread_box">
                 <div class="bread_wrap">
@@ -182,7 +319,6 @@
     </div>
     <script>
         var sel = document.getElementsByClassName("sel");
-
         sel[0].addEventListener("change", function(){
             location.href=sel[0].value;
         });
