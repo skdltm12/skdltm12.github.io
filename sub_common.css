@@ -180,9 +180,20 @@ iframe {padding-top: 30px;padding-bottom: 30px; }
 .p3bot2_2 ,.p3bot2_3 {clear: both; padding-top: 30px; width: 1200px; margin: 0 auto;}
 .laser1 {width: 600px; height: 434px;float: left;}
 .laser1 img {padding-left: 84px;}
-.laser2 {width: 600px; float: left;}
+.laser2 {width: 600px; float: left; height: 434px;}
 
 .tb5 {text-align: left; width: 600px; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;}
 .tb5 th , .tb5 td{padding-bottom: 1em;}
 .tb5 th {font-size: 18px;}
 .tb5 td {font-size: 15px;}
+
+.tb6_div {width: 100%; padding-bottom: 10px; }
+.tb6 {width: 1200px; text-align: center; border-collapse: collapse; margin: 0 auto ;font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;}
+
+.tb6 th, .tb6 td {border: 1px solid #ccc; line-height: 2.8; padding-left: 20px;padding-right: 20px;} 
+.tb6 th {background-color: rgb(244, 243, 239); border-top: 3px solid rgb(16, 140, 210);}
+
+.tb7_div {width: 100%;}
+.tb7 {display: tablb;width: 1200px; text-align: center; margin: 0 auto; border-collapse: collapse;}
+.tb7 tr {display: table-row; border : 1px solid #ccc;}
+.tb7 td {display: table-cell; border : 1px solid #ccc;}
