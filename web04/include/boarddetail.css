@@ -15,7 +15,7 @@ tr, .tr { display: table-row;}
             .page_table .inner form { display: block; text-align: center; height: 50px; position: relative; margin-bottom: 20px; }
             .page_table .searchCondition { width: 120px; outline: 0; border: 0; font-size: 18px; text-align: center; vertical-align: middle; margin-left: 5px; }
             .page_table .searchKeyword { width: 390px; font-size: 18px; height: 45px; vertical-align: middle; }
-            .page_table .btn { width: 50px; background: url(./img/btn_search.png); background-repeat: no-repeat; background-position: center;
+            .page_table .btn { width: 50px; background: url(../img/btn_search.png); background-repeat: no-repeat; background-position: center;
                 vertical-align: middle; height: 50px; cursor: pointer; }
             .page_table .search_tb { display: inline-block; margin: 0 auto; border: 1px solid #dfe5ed; border-radius: 38px; }
 

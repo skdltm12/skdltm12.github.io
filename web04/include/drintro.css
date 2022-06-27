@@ -28,7 +28,7 @@
 
         .dr_button_box a:last-child {float:right; background-color: #1f75b0; color:#fff ; ; border:1px solid #1f75b0;}
         .dr_button_box a:last-child p { text-align: center; padding-left: 0px;width: 210px; font-size: 18px;}
-        .dr_button_box a:last-child p::before {background: url(./img/icon_cal.png); width: 22px;height: 22px; content:""; display: inline-block; vertical-align: -3px; margin-right: 5px;}
+        .dr_button_box a:last-child p::before {background: url(../img/icon_cal.png); width: 22px;height: 22px; content:""; display: inline-block; vertical-align: -3px; margin-right: 5px;}
 
         #dr_career, #dr_career2 {max-height: 400px; clear:both; width: 700px; display:none ; font-size: 16px; background-color: rgb(246,246,250); margin-bottom: 40px;}
         #dr_career ul, #dr_career2 ul {margin-top: 12%; padding-top: 20px; padding-bottom: 20px; padding-left: 20px;}

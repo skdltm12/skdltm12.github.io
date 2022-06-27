@@ -12,7 +12,7 @@
 /* tnb */
         .tnb {padding-top: 27px;}
         .login {float: right; border:2px solid#eee; border-radius: 46px; padding: 10px; font-size: 14px; padding-right: 25px; padding-left: 25px;}
-        .login .sign::before {content: ""; background: url("./img/icon_login.png"); width: 15px; height: 18px;display: inline-block; margin-right: 10px; vertical-align: -3px;}
+        .login .sign::before {content: ""; background: url("../img/icon_login.png"); width: 15px; height: 18px;display: inline-block; margin-right: 10px; vertical-align: -3px;}
         .line {font-size: 12px; vertical-align: 2px; color: #ddd; padding: 5px;}
         .login span a {color: #000; font-weight: 500; font-size: 14px; font-family: 'Noto Sans KR', sans-serif;}
         .login span:hover a{color:blue;}
@@ -86,7 +86,7 @@ div#slider figure {  position: relative; width: 400%; margin: 0; top:0; left: 0;
 .medical li:nth-child(1),.medical li:nth-child(2) {border-bottom: none;}
 .medical li:nth-child(1),.medical li:nth-child(3) {border-right: none;}
 .medical a{color: #0087ab; line-height: 80px;}
-.medical_box{width: 1350px; margin: 0 auto; height: 390px; margin-top: 40px; margin-bottom: 100px;   border:1px solid #0087ab ; background-image: url("./img/bg_main1.jpg");}
+.medical_box{width: 1350px; margin: 0 auto; height: 390px; margin-top: 40px; margin-bottom: 100px;   border:1px solid #0087ab ; background-image: url("../img/bg_main1.jpg");}
 .medical_leftbox{width: 65%; height: 100%; background-color: rgb(255, 255, 255);}
 .main {display: block;  width: 400px;}
 .medical_title{width: 100%; margin-left: 60px;font-size: 30px; color: #0087ab; padding-top: 15px; }
@@ -102,7 +102,7 @@ div#slider figure {  position: relative; width: 400%; margin: 0; top:0; left: 0;
         .notice { float: left; width: 800px; height: 100%;}
         .board { float: left; width: 600px; height: 100%;}
         .notice .box { width: 800px; height: 430px; border:1px solid #ddd; margin: 0 auto; border-right:none; background-color: #fff;}
-        .board .box { width: 600px; height: 430px; border:1px solid #ddd; margin: 0 auto; background: url(./img/board_bg2.jpg); 
+        .board .box { width: 600px; height: 430px; border:1px solid #ddd; margin: 0 auto;
             background-position: center; background-repeat: no-repeat; background-size: 500px 400px; background-size: cover; background-color: #fff;}
         .box h2 { text-align: center; padding: 50px; }
         .board h2 { color: #fff; text-shadow: 0.5px 0.5px 0.5px #000; }
@@ -127,7 +127,7 @@ div#slider figure {  position: relative; width: 400%; margin: 0; top:0; left: 0;
             .innerform { display: block; text-align: center; height: 50px; position: relative; margin-bottom: 20px; }
             .searchCondition { width: 120px; outline: 0; border: 0; font-size: 18px; text-align: center; vertical-align: middle; margin-left: 5px; }
             .searchKeyword { width: 390px; font-size: 18px; height: 45px; vertical-align: middle; }
-            .innerform .btn { width: 50px; background: url(./img/btn_search.png); background-repeat: no-repeat; background-position: center;
+            .innerform .btn { width: 50px; background: url(../img/btn_search.png); background-repeat: no-repeat; background-position: center;
                 vertical-align: middle; height: 50px; cursor: pointer; border:none}
             .innerform input {border:1px solid #888}
             .search_tb { display: inline-block; margin: 0 auto; border: 2px solid #444; border-radius: 38px; margin-bottom 40px}
@@ -162,12 +162,12 @@ div#slider figure {  position: relative; width: 400%; margin: 0; top:0; left: 0;
         .ft_line {width: 100%; height: 45px; background-color: #327cb6; padding: 18px; color: #fff; font-size: 16px;}
         .ft_line p {float:left; padding-right: 10px; margin-top: 12px; padding-left: 11.5%; font-weight: 500;}
         .ft_link1 ,.ft_link2,.ft_link3,.ft_link4,.ft_link5,.ft_link6 {display: inline-block; width: 45px; height: 45px; margin: 0 10px;vertical-align: middle; background-size: cover}
-        .ft_link1 {background-image:url("./img/icon_quick_link1.png")}
-        .ft_link2 {background-image:url("./img/icon_quick_link2.png")}
-        .ft_link3 {background-image:url("./img/icon_quick_link3.png")}
-        .ft_link4 {background-image:url("./img/icon_quick_link4.png")}
-        .ft_link5 {background-image:url("./img/icon_quick_link5.png")}
-        .ft_link6 {background-image:url("./img/icon_quick_link6.png")}
+        .ft_link1 {background-image:url("../img/icon_quick_link1.png")}
+        .ft_link2 {background-image:url("../img/icon_quick_link2.png")}
+        .ft_link3 {background-image:url("../img/icon_quick_link3.png")}
+        .ft_link4 {background-image:url("../img/icon_quick_link4.png")}
+        .ft_link5 {background-image:url("../img/icon_quick_link5.png")}
+        .ft_link6 {background-image:url("../img/icon_quick_link6.png")}
         .fnb .inner { width: 1450px; height: 100%; margin-left: 30px; margin: 0 auto; }
         .fnb span { margin: 0 10px; font-size: 13px; }
         .fnb span:after { content: "|"; padding-left: 20px; color: #ddd; }
@@ -189,7 +189,7 @@ div#slider figure {  position: relative; width: 400%; margin: 0; top:0; left: 0;
 		.board_list {padding-top: 20px;}
 		.board_list h2{text-align: center; font-size: 30px; font-weight: normal;}
 /* 서브 */
- .sub_bg_img{height: 142px; background-image: url("./img/bg_sub_top1.jpg");}
+ .sub_bg_img{height: 142px; background-image: url("../img/bg_sub_top1.jpg");}
             .sub_bg_menu h2 {width: 1120px; margin: 0 auto; line-height: 142px; color: #fff; font-size: 38px;font-weight: 300;}
             .sub_bg_line {height: 75px;background: #327cb6;}
             .sub_bg_text {width: 1120px; margin: 0 auto; height: 100%; text-align: center;}
