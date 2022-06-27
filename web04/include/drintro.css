@@ -1,0 +1,40 @@
+@charset "UTF-8";
+ .dr_intro {height: 730px; width:1120px; margin:0 auto}
+
+        .dr_imgbox {border: 1px solid #ddd; width: 350px; height: 500px; float:left; margin-top: 20px;}
+        .dr_imgbox img{width: 350px; height: 500px;}
+
+        .dr_infobox {width: 700px; float:left; padding-left: 40px;}
+        .dr_infobox h2 {float:left; font-size: 38px;}
+        .dr_infobox p {font-size: 38px; float:left; padding-left: 13px;}
+        .dr_infobox span {float:right;color:#1f75b0; font-weight: 700; line-height: 70px; }
+
+        .dr_name {border-bottom: 2px solid #1f75b0; height: 70px;}
+        .dr_info p{font-size: 18px; padding-left: 0px; width: 620px; line-height: 30px; padding-top: 20px;padding-bottom: 20px;}
+        .dr_info b {width: 80px; float:left ;clear: both; line-height: 70px;}
+        .dr_infoline {border-bottom: 1px solid #ddd}
+
+        
+        .dr_tb {width: 700px; text-align: center;border-collapse: collapse}
+        .dr_tb th {background-color: #f8f8f8;}
+        .dr_tb th, .dr_tb td {height: 60px; border: 1px solid #ddd; width: 100px; height: 70px;}   
+        .td {text-align: left; font-size: 14px; padding-left: 15px;}  
+
+        .dr_button_box {padding-top: 20px;}
+        .dr_button_box a {border: 1px solid #ddd; width: 210px; display: block; float:left; height: 60px; line-height: 60px;}
+        .dr_button_box button {border: 1px solid #ddd; width: 210px; display: block; float:left; height: 62px; line-height: 60px; background-color: #fff;}
+        .dr_button_box button:first-child {border-right:none;}
+        
+
+        .dr_button_box a:last-child {float:right; background-color: #1f75b0; color:#fff ; ; border:1px solid #1f75b0;}
+        .dr_button_box a:last-child p { text-align: center; padding-left: 0px;width: 210px; font-size: 18px;}
+        .dr_button_box a:last-child p::before {background: url(../img/icon_cal.png); width: 22px;height: 22px; content:""; display: inline-block; vertical-align: -3px; margin-right: 5px;}
+
+        #dr_career, #dr_career2 {max-height: 400px; clear:both; width: 700px; display:none ; font-size: 16px; background-color: rgb(246,246,250); margin-bottom: 40px;}
+        #dr_career ul, #dr_career2 ul {margin-top: 12%; padding-top: 20px; padding-bottom: 20px; padding-left: 20px;}
+        #dr_career li, #dr_career2 li { padding: 4px; margin-left: 28px; list-style: outside;}         
+        .dr_career_btn:hover {cursor: pointer;}
+
+        #dr_research {max-height: 400px; clear:both; width: 700px; display:none ; font-size: 16px; background-color: rgb(246,246,250); margin-bottom: 40px;}
+        #dr_research ul {margin-top: 12%; padding-top: 20px; padding-bottom: 20px; padding-left: 20px;}
+        #dr_research li { padding: 4px; margin-left: 28px; list-style: outside;}         

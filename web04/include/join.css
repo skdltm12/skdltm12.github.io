@@ -1,0 +1,22 @@
+@charset "UTF-8";
+    .join { clear: both; width: 1120px; height: 100%;  margin:0 auto; text-align:center}
+    .sub_top { clear: both; width: 100%;}
+    .sub_top .inner { width: 1120px; margin: 0 auto; } 
+    .sub_top .inner h2 { padding: 40px 65px; }
+    .sub_content { clear: both; width: 100%; height: 800px; }
+    .sub_content .inner { width: 1100px; margin: 0 auto; margin-top: 100px; }
+    .join_form { width: 100%;  }
+    .join_form table { width: 1000px; height: 100%; border-collapse: collapse; }
+    .join_form tr { width: 1000px; height: 70px; border-top: 1px solid #ddd; }
+    .join_form th { width: 150px;  }
+    .join_form td { width: 300px; margin-left: 50px; }
+    .id_check { width: 100px; height: 35px; margin-left: 10px; }
+    .input_text { width: 300px; height: 35px; text-align: center; }
+    .input_text2 { width: 300px; height: 35px; text-align: center; margin: 0 auto; float:none}
+    .input_text:focus { border-color: #0087ab; outline: none; }
+    .id_td {position:relative;}
+    #chkBtn {position:absolute; border: 1px solid #ddd; width:80px; height: 40px; right:-50px}
+    .join_form tr:first-child {border-top:2px solid #333 }
+    .join_form tr:last-child {border-top:2px solid #333 }
+    .join_table {margin:0 auto}
+ 

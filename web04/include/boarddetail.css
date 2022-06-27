@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+#header {width:100%;}
+*{margin: 0; padding: 0;}
+body, html { width: 100%;font-family: 'Noto Sans KR', sans-serif; overflow-x: hidden;}
+ul{list-style: none;}
+a{text-decoration: none; }
+input, button{outline: 0; border: 0;}
+table, .table{display: table; border-collapse:collapse;}
+tr, .tr { display: table-row;}
+.wrap { clear:both; width: 100%; }
+
+
+            .page_table .inner { width: 1120px; margin: 0 auto; margin-top: 70px; }
+            .page_table .inner form { display: block; text-align: center; height: 50px; position: relative; margin-bottom: 20px; }
+            .page_table .searchCondition { width: 120px; outline: 0; border: 0; font-size: 18px; text-align: center; vertical-align: middle; margin-left: 5px; }
+            .page_table .searchKeyword { width: 390px; font-size: 18px; height: 45px; vertical-align: middle; }
+            .page_table .btn { width: 50px; background: url(./img/btn_search.png); background-repeat: no-repeat; background-position: center;
+                vertical-align: middle; height: 50px; cursor: pointer; }
+            .page_table .search_tb { display: inline-block; margin: 0 auto; border: 1px solid #dfe5ed; border-radius: 38px; }
+
+            .button { float: right; margin: 10px 20px 30px 0; }
+            .button a { color: #fff; font-size: 15px;  padding: 10px 30px; background-color: #1f75b0; }
+
+            .page_table .inner > table { display: table; width: 100%; text-align: center; margin: 0 auto; margin-bottom: 50px; border-top: 2px solid #1f75b0; }
+            .page_table .inner > table tr { height: 60px; border-bottom: 1px solid #888; }
+            .page_table .inner > table thead tr:first-child { background-color: #f6f6fa; }
+            .page_table th{background-color:#c9e6fd}
+            .page_table .th1, .page_table .th3 { width: 100px; }
+            .page_table .th2 { width: 500px; }
+            .page_table .th4 {width: 150px;}
+
+            .table_btn { width: 100%; height: 55px; margin-bottom: 20px; }
+            .table_btn ul { overflow: hidden; display: table; text-align: center; margin: 0 auto; }
+            .table_btn li { float: left; }
+            .table_btn li a { display: inline-block; width: 46px; height: 46px; font-size: 15px; line-height: 46px; 
+                border: 1px solid #ddd; border-collapse: collapse; }
+            .table_btn li a:hover { background-color: #1f75b0; color: #fff; }
+            
+                     .page { clear:both; min-height:100vh; display:none; width: 100%;}
+            .page:target { display:block; }
+            .content { clear: both; width: 100%; height: auto; overflow: hidden; }
+            .sub_content { clear: both; width: 100%; height: auto; }
+            .content_wrap {width: 1400px; margin: 0 auto;}
+            input { border: 1px solid #ddd; width: 380px; height: 40px; }
+            input:focus { border: 2.5px solid #1f75b0; }
+            textarea { border: 1px solid #ddd; }
+            textarea:focus { outline-color: #1f75b0;}
+            .file { border: 0; padding-top: 15px;}
+
+            .page_tit { width: 100%; height: 70px; margin-top: 30px; border-bottom: 1px solid #ddd; }
+            .page_tit .inner { width: 1120px; height: 100%; margin: 0 auto; }
+            .page_tit h3 { float: left; font-size: 36px; padding-top: 5px; }
+            .page_tit p { float: right; font-size: 14px; line-height: 80px; color: rgb(123, 123, 123); }
+            .page_tit p a { color: rgb(123, 123, 123); }
+            .page_tit .loca2 { color: #000; }
+
+            .page_table { width: 100%; height: 650px; margin-top: 100px; }
+            .page_table .inner { width: 1120px; margin: 0 auto; }
+            .page_table .detail_tb { display: table; width: 1000px; margin: 0 auto;text-align: center; }
+            .page_table .detail_tb tr { border-bottom: 1px solid #888; }
+
+            .page_table .detail_tb tr:first-child { border-top: 2px solid #333; }
+            .page_table .detail_tb tr:last-child { border-top:2px solid #333 ;border-bottom:none}
+            .page_table .detail_tb th { width: 20%; font-size: 20px; height: 60px; line-height: 20px; }
+            .page_table .detail_tb td input { font-size: 16px; text-align: center; }

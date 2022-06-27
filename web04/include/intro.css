@@ -1,0 +1,24 @@
+@charset "UTF-8";
+        .sub_bg_menu h2 {width: 1120px; margin: 0 auto; line-height: 142px; color: #fff; font-size: 38px;font-weight: 300; font-family: 'Noto Sans KR', sans-serif}
+        .sub_bg_line {height: 75px;background: #327cb6;}
+        .sub_bg_text {width: 1120px; margin: 0 auto; height: 100%; text-align: center;}
+        .sub_bg_line a {font-size: 18px; color:#addcf6; line-height: 90px; width: 33%; height: 20px; display: block; float:left; display: block; font-family: 'Noto Sans KR', sans-serif}  
+        .sub_bg_text a b {color: #fff; font-weight: normal; position: relative;}         
+        .sub_bg_text a b:after {content:""; background-color: #91e9ff; position: absolute; left: 0;bottom:-18px ;width: 100%; height: 10px; text-align: center;}
+
+        .sub_top, .sub_content {width: 1120px; margin: 0 auto;}
+        .inner_top {width: 100%; border-bottom: 1px solid #e4e4e4; height: 110px;line-height: 130px; margin-bottom: 40px;}
+        .inner_top h2 {float:left; font-size: 40px; font-weight: 400; font-family: 'Noto Sans KR', sans-serif}
+        .inner_top p {float:right; font-size: 14px; line-height: 160px; font-family: 'Noto Sans KR', sans-serif}
+
+        .intro_bg_img img{width: 1120px;}
+        .intro_tit {text-align: center; padding-top: 60px;}
+        .intro_tit h2 {color:rgb(65,105,225); font-family: 'Noto Sans KR', sans-serif; font-size: 36px; font-weight: 600; margin-bottom: 10px;}
+        .intro_tit p {font-family: 'Noto Sans KR', sans-serif; font-size: 24px; font-weight: 400;}
+        .intro_imgbox {text-align: center; position:relative; margin-top: 40px;}
+        .intro_left_cmt {position: absolute; top:80px; left: 200px; text-align: right; }
+        .intro_right_cmt {position: absolute; top:80px; right: 155px; text-align: left;}
+        .intro_center_cmt {margin-bottom: 50px;}
+        .intro_center_cmt , .intro_right_cmt , .intro_left_cmt {font-size: 12px;font-family: 'Noto Sans KR', sans-serif}
+        .intro_center_cmt span, .intro_right_cmt span, .intro_left_cmt span {font-size: 20px; color:rgb(65, 105, 225) ;font-family: 'Noto Sans KR', sans-serif} 
+        .img_cmt {position: absolute; top:52px; right: 45.3%; font-size: 14px; color: #fff; font-family: 'Noto Sans KR', sans-serif}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.login_wrap {width: 1060px; margin: 0 auto; padding-bottom: 200px;}
+.login_box {border: 1px solid #ececec; width: 520px; height: 250px; margin: 0 auto;}
+.login_form {height: 0px;}
+.login_form_wrap {width: 530px;  padding: 20px}
+.login_tb {width: 470px; height: 190px;}
+.login_form input {width: 350px; padding:11px 6px 11px 6px; float: left; margin-bottom: 10px ;border: 1px solid #d0d0d0; color: #979d9d; ;}
+.botton_box {float: left;}
+.button_box button { border:1px solid rgb(31, 117, 176); background-color: rgb(117, 182, 224); color: #222222; width: 100px; height: 87px; margin-top: 67px; margin-left: 20px; font-size: 16px;}
+.jointitle {clear: both; padding-left: 30px; padding-top: 20px;}
+.jointitle a {float:right; padding-right: 40px; text-decoration: none; color:#222222}
+.jointitle span>a:hover {color: blue}
+.login_form_tit {font-size: 20px; color: #222222; padding-bottom: 20px;}
+.login_wrap h2 {padding-left: 25%; padding-top: 30px;padding-bottom: 30px;}
+.button_box button:hover {cursor:pointer; background-color: rgb(31, 117, 176);border:1px solid rgb(117, 182, 224); transition: 1s; color:#fff}

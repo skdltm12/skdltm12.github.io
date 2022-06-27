@@ -7,13 +7,12 @@
         a {text-decoration: none; color: #333;}
         .wrap {clear: both; width: 100%;}
         .content {clear: both; width: 100%;}
-
 /* logo */
 .logo {float: left; padding-top: 25px;}
 /* tnb */
         .tnb {padding-top: 27px;}
         .login {float: right; border:2px solid#eee; border-radius: 46px; padding: 10px; font-size: 14px; padding-right: 25px; padding-left: 25px;}
-        .login .sign::before {content: ""; background-image: url("../html/img/icon_login.png"); width: 15px; height: 18px;display: inline-block; margin-right: 10px; vertical-align: -3px;}
+        .login .sign::before {content: ""; background: url("../html/img/icon_login.png"); width: 15px; height: 18px;display: inline-block; margin-right: 10px; vertical-align: -3px;}
         .line {font-size: 12px; vertical-align: 2px; color: #ddd; padding: 5px;}
         .login span a {color: #000; font-weight: 500; font-size: 14px; font-family: 'Noto Sans KR', sans-serif;}
         .login span:hover a{color:blue;}
@@ -163,7 +162,7 @@ div#slider figure {  position: relative; width: 400%; margin: 0; top:0; left: 0;
         .ft_line {width: 100%; height: 45px; background-color: #327cb6; padding: 18px; color: #fff; font-size: 16px;}
         .ft_line p {float:left; padding-right: 10px; margin-top: 12px; padding-left: 11.5%; font-weight: 500;}
         .ft_link1 ,.ft_link2,.ft_link3,.ft_link4,.ft_link5,.ft_link6 {display: inline-block; width: 45px; height: 45px; margin: 0 10px;vertical-align: middle; background-size: cover}
-        .ft_link1 {background-image:url("../html/img/icon_quick_link1.png")}
+        .ft_link1 {background-image:url("../html/")}
         .ft_link2 {background-image:url("../html/img/icon_quick_link2.png")}
         .ft_link3 {background-image:url("../html/img/icon_quick_link3.png")}
         .ft_link4 {background-image:url("../html/img/icon_quick_link4.png")}

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+.sub_wrap{width: 100%;}
+#rsvfrm{width: 1120px;height:1440px; display: block;}
+.reservediv {width: 1120px; height: 1360px; margin-top: 30px; border-top: 2px solid #1f75b0; display: block;}
+.reservediv td select{width: 250px; vertical-align: middle;}
+.reserve_wrap{width: 1130px; height: 2000px; margin: 0 auto;}
+.reserve{border-bottom: 2px solid #0087ab ; padding-bottom: 30px;}
+.reserve_1 .text-1{position: relative; border-bottom: 1px solid #ddd ; color: #000; padding-bottom: 20px; font-size: 22px;}
+.reserve_1 .text-2{margin: 40px 0;}
+body, html { width: 100%;font-family: 'Noto Sans KR', sans-serif;}
+
+/*테이블태그 수정*/
+table{display: table;   width: 100%;height: 545px; table-layout: fixed; border-collapse: collapse; border: 0;}
+caption{font:0/0 a;}
+label{cursor: default;}
+tbody{display: table-row-group; vertical-align: middle;}
+tr{width: 1120px; height: 64px; display: table-row;vertical-align: inherit;border-color: #333;}
+th{width: 10%; padding: 0 20px; border-bottom: 1px solid #ddd; text-align: center;}
+td{width: 915px; height: 51px; padding: 10px; border-bottom: 1px solid #ddd;  text-align: left;}
+.calbody td,th{text-align: center;}
+button{overflow: visible; cursor: pointer; border: 0;}
+
+/* select문 inputtext클래스 textarea 수정 */
+select, .inputtext, textarea { font:15px/1.5 "Noto Sans KR";border-radius: 0; box-sizing: border-box;-webkit-appearance: none;}
+.inputtext{height: 40px; padding: 0 20px; background: #fff; box-sizing: border-box; border: 1px solid #ddd;}
+select{height: 40px; border: 1px solid #ddd; padding: 0 0 0 10px; background:#fff url(/img/bg_select.gif) no-repeat 100% 50%;background-size: 13px auto; }
+option{font-weight: normal; display: block; min-height: 1.2em;}
+
+
+/* 달력 수정 */
+.maincalWrap{ width: 912px;height: 550px; padding: 10px;}
+#cal { width: 50%; float: left;}
+p.calHead{padding: 20px 0; text-align: center; background: #ddd;}
+.calHead button{font:0/0 a; width: 20px; height: 20px; background: none; border-top: 2px solid #000; border-right: 2px solid #000;}
+.calHead strong{display: inline-block; margin: 0 auto; font-size: 24px; vertical-align: middle; color: #000;}
+.calHead button.prev{transform: rotate(226deg);}
+.calHead button.next{transform: rotate(45deg);}
+.reservinfo{ float: left; width: 50%; padding: 30px 0 0 20px; box-sizing: border-box;}
+.reservetit{width: 426px;height:40px; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 1em;margin-inline-end: 1em;}
+.colbody{display: table-column-group;}
+.reservinfo .roundbox{margin: 20px 0 0; padding: 20px; background: #fafafa; border: 1px solid #ddd; border-radius: 20px;}
+.today { background-color: #0087ab; color:#fff}
+.today button {background-color: #0087ab;color:#fff}
+/* 자동입력방지,새로고침 */
+input#zsfCode.inputext{border:1px solid #ddd; box-sizing: border-box; height:  40px;}
+a.btn.btnReplace{text-decoration: none;}
+.F5 td{float: left;}
+
+/* 등록 취소 수정 */
+.reserveft {width: 1130px;height: 52px; margin: 20px -5px 0; text-align: center;}
+.reserveft-1{float: right; width: 300px; height: auto; }
+.reserveft .button0{display: inline-block; width: 100px;}
+.reserveft .button1{display: inline-block; width: 100px;}
+a.button1{border: 1px solid #0087ab; height: 30px; color:#0087ab}
+a.button1:hover {background-color:#0087ab; color:#fff}
