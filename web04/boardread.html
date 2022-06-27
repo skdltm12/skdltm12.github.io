@@ -1,0 +1,226 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>글 상세보기</title>
+
+
+
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<div class="top_nav_wrap">
+                    <div class="logo">
+                        <a href="/"><img src="/img/logo.png" alt="로고"></a> 
+                    </div>
+                    <nav class="tnb">
+                        <div class="login">
+                        	
+	                            <span class="sign">
+	                                <a href="/member/loginForm.do">로그인</a>
+	                            </span> 
+	                            <span class="line">|</span>
+	                             <span>
+	                                <a href="/member/joinForm.do">회원가입</a>
+	                            </span>
+	                        
+	                        
+                        </div>
+                    </nav>
+                </div>
+                    <nav class="gnb" id="gnb">
+                        <div class="gnb_wrap">
+                            <ul class="main_ul">
+                                <div class="background">
+                                </div>
+                                <li class="mainmenu"><a href="intro.html">병원소개</a>
+                                    <ul class="sub_ul">
+                                        <li class="submenu"><a href="/intro/intro.do">병원안내</a></li>
+                                        <li class="submenu"><a href="/intro/drintro.do">의료진 소개</a></li>
+                                        <li class="submenu"><a href="/intro/map.do">오시는 길</a></li>
+                                    </ul>
+                                </li>  
+                                <li class="mainmenu"><a href="info.html">진료안내</a>
+                                    <ul class="sub_ul">
+                                        <li class="submenu"><a href="/info/info.do">진료안내</a></li>
+                                        <li class="submenu"><a href="/info/reserve.do">진료예약</a></li>
+                                        <li class="submenu"><a href="/info/time.do">진료시간</a></li>
+                                    </ul>
+                                </li>  
+                                <li class="mainmenu"><a href="treat1.html">코클리닉</a>
+                                    <ul class="sub_ul">
+                                        <li class="submenu"><a href="/treat/treat11.do">축농증 만성부비동염</a></li>
+                                        <li class="submenu"><a href="/treat/treat12.do">비중격만곡증</a></li>
+                                        <li class="submenu"><a href="t/treat/reat13.do">비염</a></li>
+                                    </ul>
+                                </li>  
+                                <li class="mainmenu"><a href="treat2.html">목클리닉</a>
+                                    <ul class="sub_ul">
+                                        <li class="submenu"><a href="/treat/treat21.do">편도/아데노이드</a></li>
+                                        <li class="submenu"><a href="/treat/treat22.do">침샘</a></li>
+                                        <li class="submenu"><a href="/treat/treat23.do">갑상선</a></li>
+                                    </ul>
+                                </li>  
+                                <li class="mainmenu"><a href="treat3.html">귀클리닉</a>
+                                    <ul class="sub_ul">
+                                        <li class="submenu"><a href="/treat/treat31.do">어지럼증</a></li>
+                                        <li class="submenu"><a href="/treat/treat32.do">중이염</a></li>
+                                        <li class="submenu"><a href="/treat/treat33.do">난청</a></li>
+                                    </ul>
+                                </li>        
+                                <li class="mainmenu mm_last"><a href="news.html">병원소식</a>
+                                    <ul class="sub_ul sub_ul1">
+                                        <li class="submenu"><a href="/notice/list.do">공지사항</a></li>
+                                        <li class="submenu"><a href="/databank/list.do">자료실</a></li>
+                                        <li class="submenu"><a href="/board/list.do">게시판</a></li>
+                                        <li class="submenu"><a href="/qna/list.do">Q&A</a></li>
+                                    </ul>
+                                </li>             
+                            </ul>                          
+                        </div>
+                    </nav>
+<link rel="stylesheet" href="/include/reset.css">
+<link rel="stylesheet" href="/include/boarddetail.css">
+<link rel="stylesheet" href="/include/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<article id="con" class="content">
+                    <div class="sub_bg_menu">
+                        <div class="sub_bg_img">
+                            <!-- 메인메뉴에 따라 이름을 바꿔주세요 -->
+                            <h2>병원소식</h2> 
+                        </div>
+                        <div class="sub_bg_line2">
+                            <div class="sub_bg_text">
+                                <!-- 현재 페이지에 맞게 <b>태그를 넣어주세요 -->
+                                <!-- 메뉴가 4개인 페이지는 .sub_bg_line a 스타일의 width를 25%로 줄여주세요 -->
+                                <a href="treat1_sub1.html">공지사항</a>
+                                <a href="/databank/list.do">자료실</a>
+                                <a href="/board/list.do"><b>게시판</b></a>
+                                <a href="/qna/list.do">Q&A</a>
+                                <!-- <a>4번째 메뉴</a> -->
+                            </div>
+                    </div>
+                  </div>
+     <div class="content_wrap">	
+		  <div class="page_tit"> 
+                        <div class="inner">
+                            <h3>게시판</h3>
+                            <p>
+                                <span><a href="/">HOME</a></span>
+                                &nbsp;&nbsp;
+                                |
+                                &nbsp;&nbsp;
+                                <span class="loca1">병원소식</span>
+                                &nbsp;&nbsp;
+                                >
+                                &nbsp;&nbsp;
+                                <span class="loca2">게시판</span>
+                            </p>
+                        </div>    
+                    </div>
+			<form action="/board/update.do" method="post">
+		
+			<div class="page_table">
+				<div class="inner"> 			
+						<table class="detail_tb">
+							<tbody>
+								<tr>
+									<th><label for="title">번호</label></th>
+									<td>
+										
+										
+											<span>15</span>						
+										
+									</td>
+								</tr>
+								<tr>
+									<th><label for="title">제목</label></th>
+									<td>
+										
+										
+											<span>샘플4 제목입니다.</span>						
+										
+									</td>
+								</tr>
+								<tr>
+									<th><label for="content">내용</label></th>
+									<td>
+										
+										
+											<p>샘플글 4 여기는 샘플 글4에 대한 내용입니다.</p>						
+										
+									</td>
+								</tr>
+								<tr>
+									<th><label for="nickname">작성자</label></th>
+									<td>
+										
+										
+											관리자
+															
+										
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										
+										<a href="boardlist.html" class="btn btn-primary">글 목록</a>																
+									</td>
+								</tr>	
+							</tbody>
+						</table>
+		</div>
+	</div>
+	</form>
+	</div>
+</article>
+<footer id="ft">
+	
+
+
+
+ <div class="ftwrap">
+                <div class="ft_line">
+                    <p>일산이비인후과병원 SNS</p>
+                    <a href="" class="ft_link1"></a>
+                    <a href="" class="ft_link2"></a>
+                    <a href="" class="ft_link3"></a>
+                    <a href="" class="ft_link4"></a>
+                    <a href="" class="ft_link5"></a>
+                    <a href="" class="ft_link6"></a>
+                </div>
+                <div class="fnb">
+                    <div class="inner">
+                        <span><a href="">이용약관</a></span>
+                        <span><a href="">개인정보처리방침</a></span>
+                        <span><a href="">환자의 권리와 의무</a></span>
+                        <span><a href="">비급여안내</a></span>
+                    </div>
+                </div>
+                <div class="snb">
+                    <div class="inner">
+                        <div class="copy_warp">
+                            <b>일산 이비인후과</b>
+                            <p>주소 : 경기도 고양시 일산동구 무궁화로39 삼라마이다스 3차 2층 206호</p>
+                            <span>대표자 : 이호선</span>
+                            <span>사업자등록번호 : 124-96-10753</span>
+                            <span>대표전화 : T. 031)917-1155 F.031)917-1120</span>
+                            <p class="copy">Copyrightⓒ 일산이비인후과의원. All right reserved.</p>
+                        </div>
+                        <div class="ft_logo">
+                            <img src="/img/logo.png" alt="ft_logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+</footer>
+</body>
+</html>

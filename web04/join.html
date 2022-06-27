@@ -1,0 +1,275 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/include/style.css">
+<link rel="stylesheet" href="/include/join.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<title></title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="" id ="header_wrap">
+            <div class="top_nav_wrap">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/logo.png" alt="로고"></a> 
+                </div>
+                <nav class="tnb">
+                    <div class="login">
+                        
+                            <span class="sign">
+                                <a href="login.html">로그인</a>
+                            </span> 
+                            <span class="line">|</span>
+                             <span>
+                                <a href="join.html">회원가입</a>
+                            </span>
+                        
+                        
+                    </div>
+                </nav>
+            </div>
+                <nav class="gnb" id="gnb">
+                    <div class="gnb_wrap">
+                        <ul class="main_ul">
+                            <div class="background">
+                            </div>
+                            <li class="mainmenu"><a href="intro.html">병원소개</a>
+                                <ul class="sub_ul">
+                                    <li class="submenu"><a href="intro.html">병원안내</a></li>
+                                    <li class="submenu"><a href="drintro.html">의료진 소개</a></li>
+                                    <li class="submenu"><a href="map.html">오시는 길</a></li>
+                                </ul>
+                            </li>  
+                            <li class="mainmenu"><a href="info.html">진료안내</a>
+                                <ul class="sub_ul">
+                                    <li class="submenu"><a href="info.html">진료안내</a></li>
+                                    <li class="submenu"><a href="reserve.html">진료예약</a></li>
+                                    <li class="submenu"><a href="time.html">진료시간</a></li>
+                                </ul>
+                            </li>  
+                            <li class="mainmenu"><a href="treat1.html">코클리닉</a>
+                                <ul class="sub_ul">
+                                    <li class="submenu"><a href="treat1_sub1.html">축농증 만성부비동염</a></li>
+                                    <li class="submenu"><a href="treat1_sub2.html">비중격만곡증</a></li>
+                                    <li class="submenu"><a href="treat1_sub3.html">비염</a></li>
+                                </ul>
+                            </li>  
+                            <li class="mainmenu"><a href="treat2.html">목클리닉</a>
+                                <ul class="sub_ul">
+                                    <li class="submenu"><a href="treat2_sub1.html">편도/아데노이드</a></li>
+                                    <li class="submenu"><a href="treat2_sub2.html">침샘</a></li>
+                                    <li class="submenu"><a href="treat2_sub3.html">갑상선</a></li>
+                                </ul>
+                            </li>  
+                            <li class="mainmenu"><a href="treat3.html">귀클리닉</a>
+                                <ul class="sub_ul">
+                                    <li class="submenu"><a href="treat3_sub1.html">어지럼증</a></li>
+                                    <li class="submenu"><a href="treat3_sub2.html">중이염</a></li>
+                                    <li class="submenu"><a href="treat3_sub3.html">난청</a></li>
+                                </ul>
+                            </li>        
+                            <li class="mainmenu mm_last"><a href="news.html">병원소식</a>
+                                <ul class="sub_ul sub_ul1">
+                                    <li class="submenu"><a href="notice.html">공지사항</a></li>
+                                    <li class="submenu"><a href="databank.html">자료실</a></li>
+                                    <li class="submenu"><a href="boardlist.html">게시판</a></li>
+                                    <li class="submenu"><a href="qna.html">Q&A</a></li>
+                                </ul>
+                            </li>             
+                        </ul>                          
+                    </div>
+                </nav>
+         </div>
+    </header>
+ <article class="content">
+ <div class="sub_bg_menu">
+                        <div class="sub_bg_img">
+                            <!-- 메인메뉴에 따라 이름을 바꿔주세요 -->
+                            <h2>회원가입</h2> 
+                        </div>
+                        <div class="sub_bg_line2">
+                            <div class="sub_bg_text">
+                                <!-- 현재 페이지에 맞게 <b>태그를 넣어주세요 -->
+                                <!-- 메뉴가 4개인 페이지는 .sub_bg_line a 스타일의 width를 25%로 줄여주세요 -->
+  
+                                <!-- <a>4번째 메뉴</a> -->
+                            </div>
+                    </div>
+                    </div>
+        <div class="join">
+            <div class="sub_top">
+		  <div class="page_tit"> 
+                        <div class="inner">
+                            <h3>회원가입</h3>
+                            <p>
+                                <span><a href="/">HOME</a></span>
+                                &nbsp;&nbsp;
+                                >
+                                &nbsp;&nbsp;
+                                <span class="loca1">회원가입</span>
+                                &nbsp;&nbsp;                              
+                            </p>
+                        </div>    
+                    </div>
+            </div>
+            <div class="sub_content">
+                <div class="inner">
+                    <form action="/member/join.html" method="post"  class="join_form" name="join_form" onsubmit="return joinCheck(this)">
+                        <table class="join_table">
+                            <tbody>
+                            	<tr>
+                                   <th>아이디</th>
+									<td class="id_td">
+										
+										<input type="text" name="mid" id="mid" placeholder="아이디 입력" required class="input_text2">
+										<!-- pattern="^[a-z0-9]+$" -->
+										
+										
+										<button id="chkBtn" type="button" class="btn" onclick="idCheck()">중복 확인</button>
+										
+										<input type="hidden" name="ck" id="ck" />
+										
+															
+									</td>
+                                </tr>
+                                <tr>
+									<th>비밀번호</th>
+<!--  								 pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$"-->	
+										<td><input  class="input_text" type="password" id="mpw" name="mpw"  placeholder="비밀번호 입력" required>
+										<p>최소 8자리에서 최대 16자리까지 숫자,영문,대소문자,특수문자가 각각 포함돼있어야 합니다.</p>
+										</td>
+                                </tr>
+                                <tr>
+                          			<th>비밀번호 확인</th>
+									<td><input class="input_text" type="password" id="mpw2" name="mpw2"  placeholder="비밀번호 확인" required></td>
+                                </tr>
+								<tr>
+									<th>이름</th>
+									<td><input class="input_text" type="text" id="mname" name="mname" size="40" required></td>
+								</tr>
+								<tr>
+									<th>이메일</th>
+									<td><input class="input_text" type="text" id="memail" name="memail" size="40" required></td>
+									<!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" -->
+								</tr>
+								<tr>
+									<th>전화번호</th>
+									<td><input class="input_text" type="text" id="mtel" name="mtel" size="40" required></td>
+								</tr>
+								<tr>
+									<th>주소1</th>
+									<td><input class="input_text" type="text" id="addr1" name="addr1" size="40" required></td>
+								</tr>
+								<tr>
+									<th>주소2</th>
+									<td><input class="input_text" type="text" id="addr2" name="addr2" size="40" required></td>
+								</tr>
+								<tr>
+									<th>우편번호</th>
+									<td><input class="input_text" type="text" id="postcode" name="postcode" size="40" required></td>
+									<td><input type="button" value="주소찾기" onclick="findAddr()" class="btn1"></td>
+								</tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="submit" value="가입하기" class="btn1">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <script>
+                    function idCheck() {
+                		var uid = document.join_form.mid.value;
+                		if(uid==""){
+                			alert("아이디가 입력되지 않았습니다. 아이디를 입력 후 진행하시기 바랍니다.");
+                			return false;
+                		} else {
+                			location.href="/member/idCheck.html?mid="+uid;
+                		}
+                	}
+                    </script>
+                    <script>
+                    function joinCheck(f){
+                		if(f.mpw.value!=f.mpw2.value){
+                			alert("비밀번호와 비밀번호 확인이 서로 다릅니다.");
+                			return false;
+                		}
+                		if(f.ck.value!="ok"){
+                			alert("회원가입 중복체크를 진행하지 않았습니다.");
+                			return false;
+                		}
+                	}
+                    </script>
+                    <script>
+                	function findAddr() {
+                		new daum.Postcode({
+                			oncomplete: function(data) {
+                				console.log(data);
+                				var roadAddr = data.roadAddress;
+                				var jibunAddr = data.jibunAddress;
+                				document.getElementById("postcode").value = data.zonecode;
+                				if(roadAddr !== '') {
+                					document.getElementById("addr1").value = roadAddr;				
+                				} else if(jibunAddr !== ''){
+                					document.getElementById("addr1").value = jibunAddr;
+                				}
+                			}
+                		}).open();
+                	}                	
+                    </script>
+                    
+                    	<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+                </div>    
+            </div>
+        </div>
+    </article>
+<footer id="ft">
+	
+
+
+
+ <div class="ftwrap">
+                <div class="ft_line">
+                    <p>일산이비인후과병원 SNS</p>
+                    <a href="" class="ft_link1"></a>
+                    <a href="" class="ft_link2"></a>
+                    <a href="" class="ft_link3"></a>
+                    <a href="" class="ft_link4"></a>
+                    <a href="" class="ft_link5"></a>
+                    <a href="" class="ft_link6"></a>
+                </div>
+                <div class="fnb">
+                    <div class="inner">
+                        <span><a href="">이용약관</a></span>
+                        <span><a href="">개인정보처리방침</a></span>
+                        <span><a href="">환자의 권리와 의무</a></span>
+                        <span><a href="">비급여안내</a></span>
+                    </div>
+                </div>
+                <div class="snb">
+                    <div class="inner">
+                        <div class="copy_warp">
+                            <b>일산 이비인후과</b>
+                            <p>주소 : 경기도 고양시 일산동구 무궁화로39 삼라마이다스 3차 2층 206호</p>
+                            <span>대표자 : 이호선</span>
+                            <span>사업자등록번호 : 124-96-10753</span>
+                            <span>대표전화 : T. 031)917-1155 F.031)917-1120</span>
+                            <p class="copy">Copyrightⓒ 일산이비인후과의원. All right reserved.</p>
+                        </div>
+                        <div class="ft_logo">
+                            <img src="/img/logo.png" alt="ft_logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+</footer>
+</body>
+</html>
