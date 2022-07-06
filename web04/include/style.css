@@ -1,12 +1,11 @@
 @charset 'UTF-8';
-   /*초기화*/
-        *{ margin: 0; padding: 0; text-decoration: none; list-style: none; }        
-        #header {width:100%;}
-        body, html{ width: 100%; overflow-x: hidden;}
-        ul {list-style: none;}
-        a {text-decoration: none; color: #333;}
-        .wrap {clear: both; width: 100%;}
-        .content {clear: both; width: 100%;}
+*{ margin: 0; padding: 0; text-decoration: none; list-style: none; }        
+#header {width:100%;}
+body, html{ width: 100%; overflow-x: hidden;}
+ul {list-style: none;}
+a {text-decoration: none; color: #333;}
+.wrap {clear: both; width: 100%;}
+.content {clear: both; width: 100%;}
 /* logo */
 .logo {float: left; padding-top: 25px;}
 /* tnb */
