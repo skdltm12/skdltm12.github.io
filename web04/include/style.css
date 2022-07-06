@@ -130,7 +130,7 @@ div#slider figure {  position: relative; width: 400%; margin: 0; top:0; left: 0;
             .innerform .btn { width: 50px; background: url(../img/btn_search.png); background-repeat: no-repeat; background-position: center;
                 vertical-align: middle; height: 50px; cursor: pointer; border:none}
             .innerform input {border:1px solid #888}
-            .search_tb { display: inline-block; margin: 0 auto; border: 2px solid #444; border-radius: 38px; margin-bottom 40px}
+            .search_tb { display: inline-block; margin: 0 auto; border: 2px solid #444; border-radius: 38px;}
         
 
         /*오시는길, 진료시간*/
